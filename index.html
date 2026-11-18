@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Date ❤️</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffdce7, #f7b9d2);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+            color: #792749;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        button {
+            background: #d6336c;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            margin: 10px;
+            font-size: 22px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">
+        <div style="font-size: 60px;">🍿🎬</div>
+
+        <h1>Θέλεις να δούμε ταινία;</h1>
+
+        <button onclick="yes()">ναι</button>
+        <button onclick="yes()">ΝΑΙ</button>
+    </div>
+
+    <script>
+        function yes() {
+            document.getElementById("content").innerHTML =
+                "<h1>Τέλεια! Ραντεβού για ταινία!</h1>" +
+                "<div style='font-size: 80px;'>❤️</div>";
+        }
+    </script>
+
+</body>
+</html>
